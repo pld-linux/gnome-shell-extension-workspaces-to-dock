@@ -13,10 +13,6 @@ URL:		https://extensions.gnome.org/extension/427/workspaces-to-dock/
 # $ git archive --format=tar --prefix=%{name}-%{version}/ master | xz > ../%{name}-%{version}.tar.xz
 Source0:	%{extname}-%{version}.tar.xz
 # Source0-md5:	233e9924159d3fc29d375a4f8c16f6af
-BuildRequires:	gnome-common
-BuildRequires:	intltool
-BuildRequires:	gnome-desktop-devel
-BuildRequires:	libgtop-devel
 Requires:	gnome-shell >= 3.6.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
