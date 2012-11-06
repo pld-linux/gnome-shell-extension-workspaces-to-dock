@@ -1,0 +1,22 @@
+--- workspaces-to-dock-20121027/dockedWorkspaces.js~	2012-10-27 04:55:21.000000000 +0200
++++ workspaces-to-dock-20121027/dockedWorkspaces.js	2012-11-06 19:05:28.508057891 +0100
+@@ -9,7 +9,7 @@
+  * ========================================================================================================
+  */
+ 
+-const _DEBUG_ = true;
++const _DEBUG_ = false;
+ 
+ const Clutter = imports.gi.Clutter;
+ const Lang = imports.lang;
+--- workspaces-to-dock-20121027/intellihide.js~	2012-10-27 04:55:21.000000000 +0200
++++ workspaces-to-dock-20121027/intellihide.js	2012-11-06 19:06:01.658056711 +0100
+@@ -6,7 +6,7 @@
+  * ========================================================================================================
+  */
+ 
+-const _DEBUG_ = true;
++const _DEBUG_ = false;
+ 
+ const Lang = imports.lang;
+ const Meta = imports.gi.Meta;

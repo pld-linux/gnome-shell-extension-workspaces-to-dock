@@ -2,7 +2,7 @@
 Summary:	Transform the workspaces of the overview mode into an intellihide dock
 Name:		gnome-shell-extension-%{extname}
 Version:	20121027
-Release:	1
+Release:	2
 Group:		X11/Applications
 # parts of code comes from gnome-shell-extensions which is GPLv2, assume GPL virality
 # as there is no information about license
@@ -13,6 +13,7 @@ URL:		https://extensions.gnome.org/extension/427/workspaces-to-dock/
 # $ git archive --format=tar --prefix=%{name}-%{version}/ master | xz > ../%{name}-%{version}.tar.xz
 Source0:	%{extname}-%{version}.tar.xz
 # Source0-md5:	233e9924159d3fc29d375a4f8c16f6af
+Patch0:		no-debug.patch
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires:	gnome-shell >= 3.6.0
@@ -26,6 +27,7 @@ maintain tight integration with the Gnome Shell.
 
 %prep
 %setup -q -n %{extname}-%{version}
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
